@@ -14,7 +14,9 @@ RUN python3 -m venv /opt/venv \
     && . /opt/venv/bin/activate \
     && pip install --upgrade pip \
     && pip install sympy \
-    && pip install matplotlib
+    && pip install matplotlib \
+    && pip install setuptools \
+    && pip install cython
 
 # Set the virtual environment as the default Python environment
 ENV VIRTUAL_ENV /opt/venv
