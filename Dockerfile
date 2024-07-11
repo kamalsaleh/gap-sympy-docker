@@ -13,7 +13,8 @@ RUN apt-get update \
 RUN python3 -m venv /opt/venv \
     && . /opt/venv/bin/activate \
     && pip install --upgrade pip \
-    && pip install sympy
+    && pip install sympy \
+    && pip install matplotlib
 
 # Set the virtual environment as the default Python environment
 ENV VIRTUAL_ENV /opt/venv
