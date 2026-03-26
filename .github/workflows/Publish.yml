@@ -6,7 +6,7 @@ on:
     branches:
       - "master"
   schedule:
-    - cron: "0 2 * * *" # later than gap-docker-base
+    - cron: "0 3 * * *" # later than gap-docker
   workflow_dispatch:
 
 env:
