@@ -20,7 +20,7 @@ RUN python3 -m venv /opt/venv \
     && pip install cython
 
 # Set the virtual environment as the default Python environment
-ENV VIRTUAL_ENV /opt/venv
-ENV PATH /opt/venv/bin:$PATH
+ENV VIRTUAL_ENV=/opt/venv
+ENV PATH=/opt/venv/bin:$PATH
 
 USER gap
